@@ -1,14 +1,21 @@
 import React from "react";
 import "./App.css";
+import NasaPhoto from "./NasaPhoto";
+import styled from 'styled-components';
 
 function App() {
+
+  const Title = styled.h1`
+    color: white;
+  `;
+
   return (
+
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
+      <Title>Nasa Photo Of The Day!</Title>
+        <br></br>
+        <NasaPhoto />
+      </div>
   );
 }
 
